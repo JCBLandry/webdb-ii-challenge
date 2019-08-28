@@ -16,4 +16,6 @@ exports.up = function(knex) {
   //undoes the changes
   exports.down = function(knex) {
     //drop the fruits table
+    knex.schema.dropTableIfExists('cars');
+
   };
